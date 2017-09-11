@@ -1,0 +1,9 @@
+<div class="container-fluid">
+  <div class="col-lg-10 col-lg-offset-1">
+    <h1>Retro Barcode Generator</h1>
+      <div class="row">
+        <div class="box" *ngFor="let color of colors" [ngStyle]="{'background-color': color}"></div>
+        <button class="btn btn-primary" (click)="randomColors(colors)">New Barcode</button>
+      </div>
+  </div>
+</div>
